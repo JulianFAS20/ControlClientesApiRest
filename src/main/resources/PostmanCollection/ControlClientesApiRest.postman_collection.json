@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "a4da6771-58b1-4b29-b843-96fd9c3d9bbd",
+		"name": "ControlClientesApiRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17932054"
+	},
+	"item": [
+		{
+			"name": "getClients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/ClientsApi/getClients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"ClientsApi",
+						"getClients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClientByTypeAndNumberDocument",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoDocumento\": \"C\",\r\n    \"numeroDocumento\": \"23445322\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/ClientsApi/getClientByTypeAndNumberDocument",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"ClientsApi",
+						"getClientByTypeAndNumberDocument"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClientById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/ClientsApi/getClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"ClientsApi",
+						"getClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createClient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoDocumento\": \"C\",\r\n    \"numeroDocumento\": \"23445668\",\r\n    \"primerNombre\": \"Brayan\",\r\n    \"segundoNombre\": \"\",\r\n    \"primerApellido\": \"Carbajal\",\r\n    \"segundoApellido\": \"\",\r\n    \"telefono\": \"7771548\",\r\n    \"direccion\": \"Callejón Carla Vila, Piso 8\",\r\n    \"ciudadResidencia\": \"Bogota\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/ClientsApi/createClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"ClientsApi",
+						"createClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateClient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 8,\r\n    \"tipoDocumento\": \"C\",\r\n    \"numeroDocumento\": \"23445668\",\r\n    \"primerNombre\": \"Brayan\",\r\n    \"segundoNombre\": \"Andres\",\r\n    \"primerApellido\": \"Carbajal\",\r\n    \"segundoApellido\": \"Arias\",\r\n    \"telefono\": \"7771548\",\r\n    \"direccion\": \"Callejón Carla Vila, Piso 10\",\r\n    \"ciudadResidencia\": \"Bogota\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/ClientsApi/updateClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"ClientsApi",
+						"updateClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteClient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoDocumento\": \"C\",\r\n    \"numeroDocumento\": \"23445668\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/ClientsApi/deleteClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"ClientsApi",
+						"deleteClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteClientById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/ClientsApi/deleteClientById/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"ClientsApi",
+						"deleteClientById",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
